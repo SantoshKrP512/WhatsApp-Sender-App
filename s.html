@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced WhatsApp Sender</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h1 class="card-title">Send a WhatsApp Message</h1>
+            <p class="card-subtitle">Enter the details below to send a message without saving the number.</p>
+
+            <div class="input-group">
+                <label for="countryCode">Country Code</label>
+                <select id="countryCode">
+                    <option value="91" selected>🇮🇳 India (+91)</option>
+                    <option value="1">🇺🇸 USA (+1)</option>
+                    <option value="44">🇬🇧 UK (+44)</option>
+                    <option value="61">🇦🇺 Australia (+61)</option>
+                    <option value="81">🇯🇵 Japan (+81)</option>
+                    <option value="49">🇩🇪 Germany (+49)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="phoneNumber">Phone Number <span id="countryFlag">🇮🇳</span></label>
+                <input type="tel" id="phoneNumber" placeholder="e.g., 9876543210">
+                <span id="validation-icon" class="hidden"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="messageText">Your Message</label>
+                <textarea id="messageText" placeholder="Enter your message here..." rows="5"></textarea>
+                <span id="charCount" class="char-counter">0 characters</span>
+                <div class="template-buttons">
+                    <button class="template-btn" data-template="Hi, I'm interested in your product.">Product Inquiry</button>
+                    <button class="template-btn" data-template="Hello, is this still available?">Availability</button>
+                    <button class="template-btn" data-template="Thanks for your time!">General Thanks</button>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="send-btn" onclick="sendWhatsAppMessage()">
+                    <i class="fab fa-whatsapp"></i> Send
+                </button>
+                <button class="copy-btn" onclick="copyWhatsAppLink()">
+                    <i class="fas fa-copy"></i> Copy Link
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

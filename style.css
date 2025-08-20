@@ -1,0 +1,192 @@
+/* General Body and Container Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+}
+
+/* Typography */
+.card-title {
+    color: #1f2937;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-subtitle {
+    color: #6b7280;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Input Fields and Select Dropdown */
+.input-group {
+    text-align: left;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.95rem;
+    color: #4b5563;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #374151;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: #25d366;
+    box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.2);
+}
+
+/* Validation Icon */
+#validation-icon {
+    position: absolute;
+    right: 20px;
+    top: 55%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+}
+
+#validation-icon.valid {
+    color: #25d366;
+}
+
+#validation-icon.invalid {
+    color: #f44336;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Message Templates */
+.template-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.template-btn {
+    background-color: #e5e7eb;
+    color: #4b5563;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.template-btn:hover {
+    background-color: #d1d5db;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.send-btn, .copy-btn {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.send-btn {
+    background-color: #25d366;
+    color: #ffffff;
+}
+
+.copy-btn {
+    background-color: #4b5563;
+    color: #ffffff;
+}
+
+.send-btn:hover {
+    background-color: #1da851;
+    transform: translateY(-2px);
+}
+
+.copy-btn:hover {
+    background-color: #374151;
+    transform: translateY(-2px);
+}
+
+.send-btn i, .copy-btn i {
+    margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .card {
+        padding: 20px;
+    }
+    .card-title {
+        font-size: 2rem;
+    }
+    .card-subtitle {
+        font-size: 1rem;
+    }
+    .button-group {
+        flex-direction: column;
+    }
+}
+/* ... existing CSS styles ... */
+
+/* New style for the character counter */
+.char-counter {
+    display: block;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-top: 5px;
+}
+
+/* Position the country flag emoji */
+#countryFlag {
+    margin-left: 5px;
+}
