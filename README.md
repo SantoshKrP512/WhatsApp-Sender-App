@@ -6,7 +6,7 @@
 
 **WhatsApp Bulk Sender Pro** is a high-performance, browser-based messaging platform designed for individuals and businesses to reach their contacts efficiently. Featuring a stunning glassmorphism UI, it transforms the simple task of messaging into a premium dashboard experience.
 
-![Dashboard Preview](https://github.com/SantoshKrP512/WhatsApp-Sender-App/raw/main/dashboard_overview.png) *(Note: Please upload the screenshot to your repo to display it here)*
+![Dashboard Preview](https://github.com/SantoshKrP512/WhatsApp-Sender-App/raw/main/dashboard_overview.png)
 
 ## ✨ Key Features
 
@@ -65,4 +65,4 @@ Contributions are welcome! Feel free to open an issue or submit a pull request t
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-Developed with ❤️ by [SantoshKrP512](https://github.com/SantoshKrP512)
+Developed with ❤️ by [Santosh Kumar Paswan](https://github.com/SantoshKrP512)
